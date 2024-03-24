@@ -1,0 +1,58 @@
+:root {
+  background: #0d0c0e;
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-size: 12px;
+  --main-color: #4f3669;
+  --main-color-hover: #664d81;
+  --main-color-focus: #42295c;
+  --input-bg: #2c2a2f;
+  --placeholder-color: #968f9d;
+  --brightest-color: #e2dde8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #e7def0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--input-bg);
+  outline: none;
+  color: var(--brightest-color);
+}
+
+.primary-btn {
+  background-color: var(--main-color);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: var(--brightest-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--main-color-hover);
+  }
+  &:focus {
+    background-color: var(--main-color-focus);
+  }
+}
